@@ -12,7 +12,14 @@ code {
     monospace;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
+  --no-slides: 6;
   --black: #122c44;
   --teku: #0094FE;
   --drones: #68CB35;

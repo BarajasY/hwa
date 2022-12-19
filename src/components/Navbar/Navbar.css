@@ -25,10 +25,11 @@
 }
 
 .nav_content section:nth-child(2) a {
-    color: var(--black);
     margin: 20px;
+    color: transparent;
     font-size: 1.1vw;
     font-weight: 800;
+    color: var(--black);
 }
 
 @media only screen and (max-width:991px) {
