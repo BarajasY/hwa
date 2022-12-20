@@ -64,6 +64,7 @@
 
 .hero_content section:nth-child(2) button:hover {
     border: 2px solid black;
+    box-shadow: 4px 4px 10px black;
 }
 
 .line {

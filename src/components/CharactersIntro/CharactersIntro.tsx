@@ -16,8 +16,8 @@ const CharactersIntro = () => {
         <section>
           {allImages.map((d) => (
             <div className="charImage">
-              <img src={d} alt="Character" onClick={() => navigate('/characters')}/>
-              <img src={d} alt="Character" />
+              <img src={d} alt="Character" id="Image" onClick={() => navigate('/characters')}/>
+              <img src={d} alt="Character" id="Blur"/>
             </div>
           ))}
         </section>
