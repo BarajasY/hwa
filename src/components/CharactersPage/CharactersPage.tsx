@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './CharactersPage.css';
 import { db} from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
+import { CharactersInterface, DataInterface } from '../../types';
 
 const CharactersPage = () => {
-    const [Characters, setCharacters] = useState([])
-    const [TekuActive, setTekuActive] = useState(null)
-    const [ManiacsActive, setManiacsActive] = useState(null)
-    const [DronesActive, setDronesActive] = useState(null)
+    const [Characters, setCharacters] = useState<DataInterface[]>([])
+    const [TekuActive, setTekuActive] = useState<number>(10)
+    const [ManiacsActive, setManiacsActive] = useState<number>(10)
+    const [DronesActive, setDronesActive] = useState<number>(10)
     const teku = Characters.filter(d => d.data.org === "Teku");
     const maniacs = Characters.filter(d => d.data.org === "Metal Maniacs");
     const drones = Characters.filter(d => d.data.org === "Racing Drones");
@@ -43,7 +44,7 @@ const CharactersPage = () => {
                         </div>
                     ))}
                 </section>
-                {TekuActive === null ? <></> 
+                {TekuActive === 10 ? <></> 
                 :
                 <div className="teku_about">
                     <h1>{teku[TekuActive].data.description}</h1>
@@ -65,7 +66,7 @@ const CharactersPage = () => {
                             ))}
                     </section>
                     <section>
-                    {ManiacsActive === null ? <></> 
+                    {ManiacsActive === 10 ? <></> 
                     :
                     <div className="mm_about">
                         <h1>{maniacs[ManiacsActive].data.description}</h1>
@@ -88,7 +89,7 @@ const CharactersPage = () => {
                     ))}
                     </div>
                     <section>
-                    {DronesActive === null ? <></> 
+                    {DronesActive === 10 ? <></> 
                     :
                     <div className="rd_about">
                         <h1>{drones[DronesActive].data.description}</h1>
