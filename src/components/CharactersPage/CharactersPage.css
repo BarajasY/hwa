@@ -1,0 +1,306 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.teku_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+.teku_header {
+    width: 80%;
+    font-family: 'Inter';
+    text-shadow: 1px 0px 1px var(--teku2), 0px -1px 1px var(--teku2), -1px 0px 1px var(--teku2), 0px 1px 1px var(--teku2);
+    color: white;
+    font-weight: 800;
+    transition: .2s;
+    user-select: none;
+}
+
+.teku_header h1 {
+    font-size: 2vw;
+    width: fit-content;
+    transition: .2s;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.teku_header h1:hover {
+    color: var(--teku2);
+    text-shadow: none;
+    border: 2px solid var(--teku2);
+}
+
+.teku_content section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transition: .5s;
+}
+
+.card {
+    user-select: none;
+    -moz-user-select: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 10px;
+    background: white;
+}
+
+#tk {
+    border: 2px solid var(--teku2);
+    width: calc(100% / 8);
+    margin: 10px;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#tk:hover h1 {
+    color: rgb(19,60,214);
+    text-shadow: none;
+}
+
+.card:hover h1:nth-child(3) {
+    opacity: 1;
+}
+
+.card img {
+    width: 110px;
+    height: 110px;
+    transform: translateY(-70px);
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.card h1 {
+    font-size: 2vw;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    transition: .5s;
+    transform: translateY(-80px);
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+#tk h1 {
+    text-shadow: 2px 0px 2px rgb(19,60,214), 0px 2px 2px rgb(19,60,214), -2px 0px 2px rgb(19,60,214), 0px -2px 2px rgb(19,60,214);
+}
+
+.card h1:nth-child(3) {
+    color: black;
+    text-shadow: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.card p {
+    width: 100%;
+    height: 20%;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+.teku_about {
+    width: 80%;
+    height: 20%;
+    border: 2px solid var(--teku2);
+    border-radius: 15px;
+    padding: 20px;
+    transition: .2s;
+    z-index: 1;
+    background: white;
+}
+
+.teku_about h1 {
+    font-size: 1.5vw;
+    color: var(--teku2);
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.teku_about:hover {
+    transform: translateY(-5px);
+}
+
+.mm_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mm_header {
+    width: 80%;
+    display: flex;
+}
+
+.mm_header h1 {
+    border: 2px solid transparent;
+    text-shadow: 2px 0px 2px var(--maniacs), 0px 2px 2px var(--maniacs), -2px 0px 2px var(--maniacs), 0px -2px 2px var(--maniacs);
+    font-size: 1.5vw;
+    color: white;
+    transition: .5s;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mm_header h1:hover {
+    color: var(--maniacs);
+    text-shadow: none;
+    border: 2px solid var(--maniacs);
+}
+
+.mm_content section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#mm {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border: 2px solid var(--maniacs);
+}
+
+#mm h1:nth-child(2) {
+    text-shadow: 2px 0px 2px var(--maniacs), 0px 2px 2px var(--maniacs), -2px 0px 2px var(--maniacs), 0px -2px 2px var(--maniacs);
+}
+
+#mm:hover h1:nth-child(2) {
+    color:  var(--maniacs);
+    text-shadow: none;
+}
+
+.mm_about {
+    border: 2px solid var(--maniacs);
+    padding: 20px;
+    height: fit-content;
+    border-radius: 15px;
+    transition: .2s;
+    width: 90%;
+    height: 20vh;
+}
+
+.mm_about h1 {
+    font-size: 1.5vw;
+    color: var(--maniacs);
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.mm_about:hover {
+    transform: translateY(-10px);
+}
+
+.rd_content {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.rd_header {
+    width: 80%;
+}
+
+.rd_header h1 {
+    font-size: 1.5vw;
+    width: fit-content;
+    padding: 20px;
+    border: 2px solid transparent;
+    font-family: 'Inter';
+    font-weight: 800;
+    border-radius: 15px;
+    color: white;
+    transition: .5s;
+    text-shadow: 2px 0px 2px var(--drones), 0px 2px 2px var(--drones), -2px 0px 2px var(--drones), 0px -2px 2px var(--drones);
+}
+
+.rd_header h1:hover {
+    color: var(--drones);
+    text-shadow: none;
+    border: 2px solid var(--drones);
+}
+
+.rd_cards {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#rd {
+    border: 2px solid var(--drones);
+    width: calc(100% / 6);
+    margin: 20px;
+}
+
+#rd h1:nth-child(2) {
+    color: white;
+    text-shadow: 2px 0px 2px var(--drones), 0px 2px 2px var(--drones), -2px 0px 2px var(--drones), 0px -2px 2px var(--drones);
+}
+
+#rd:hover h1:nth-child(2) {
+    color: var(--drones);
+    text-shadow: none;
+}
+
+.rd_content section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rd_about {
+    border: 2px solid var(--drones);
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    height: 13vh;
+    transition: .2s;
+}
+
+.rd_about:hover {
+    transform: translateY(-10px);
+}
+
+.rd_about h1 {
+    font-size: 1.5vw;
+    color: var(--drones);
+    font-family: 'Inter';
+    font-weight: 500;
+}

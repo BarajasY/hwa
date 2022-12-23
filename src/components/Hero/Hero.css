@@ -1,6 +1,6 @@
 .hero_container {
     width: 100vw;
-    height: 80vh;
+    height: calc(80vh + 70px);
     max-width: 100%;
 }
 

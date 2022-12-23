@@ -46,6 +46,11 @@
     font-weight: 600
 }
 
+.realmsContent article {
+    width: 4px;
+    background: black;
+}
+
 .circle {
     width: 150px;
     height: 150px;
