@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Hero, MoviesIntro, CharactersIntro, RealmsIntro, CharactersPage} from './components/index';
+import {Navbar, Hero, MoviesIntro, CharactersIntro, RealmsIntro, CharactersPage, MoviesPage} from './components/index';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Routes>
            <Route path="/" element={<><Hero/> <MoviesIntro /> <CharactersIntro/> <RealmsIntro/></>}/>
            <Route path="/characters" element={<><CharactersPage/></>} />
+           <Route path="/movies" element={<><MoviesPage/></>} />
         </Routes>
       </BrowserRouter>
     </div>

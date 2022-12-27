@@ -11,9 +11,9 @@ const Navbar = () => {
                 <Link to="/"><h1>Acceleracers</h1></Link>
             </section>
             <section>
-                <Link to="/Movies">Movies</Link>
+                <Link to="/movies">Movies</Link>
                 <Link to="/Characters">Characters</Link>
-                <Link to="/Realms">Realms</Link>
+                <Link to="/realms">Realms</Link>
             </section>
         </div>
     </div>
