@@ -1,26 +1,25 @@
 import React from 'react';
-import './WRace.css';
-import worldr from '../../assets/world.webp';
+import Speed from '../../assets/movie2.webp'
 
-const WRace = () => {
+const SOSilence = () => {
   return (
     <div className="wr_container">
         <div className="wr_content">
             <div className="wr_first">
                 <div className="wr_image">
-                    <img src={worldr} alt="World Race" />
-                    <img src={worldr} alt="World Race" />
+                    <img src={Speed} alt="Speed of Silence" />
+                    <img src={Speed} alt="Speed of Silence" />
                 </div>
             </div>
             <div className="wr_second">
                 <div className="wr_title">
                     <div className="wr_main">
-                        <h1 id="wr_t">World Race</h1>
+                        <h1 id="wr_t">Speed of Silence</h1>
                     </div>
                     <div className="wr_sub">
-                        <h1>World Race</h1>
-                        <h1>World Race</h1>
-                        <h1>World Race</h1>
+                        <h1>Speed of Silence</h1>
+                        <h1>Speed of Silence</h1>
+                        <h1>Speed of Silence</h1>
                     </div>
                 </div>
                 <div className="wr_description">
@@ -29,21 +28,21 @@ const WRace = () => {
                         <article>
                             <section>
                                 <h1>Title</h1>
-                                <p>World Race</p>
+                                <p>Speed of Silence</p>
                             </section>
                             <section>
                                 <h1>Order</h1>
-                                <p>Prequel</p>
+                                <p>Second</p>
                             </section>
                         </article>
                         <article>
                             <section>
                                 <h1>Duration</h1>
-                                <p>1hr 50m</p>
+                                <p>1hr</p>
                             </section>
                             <section>
                                 <h1>Release Date</h1>
-                                <p>December 2, 2003</p>
+                                <p>2005</p>
                             </section>
                         </article>
                     </div>
@@ -54,4 +53,4 @@ const WRace = () => {
   )
 }
 
-export default WRace
+export default SOSilence

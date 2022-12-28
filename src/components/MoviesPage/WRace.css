@@ -1,10 +1,10 @@
-.container {
+.wr_container {
     width: 100vw;
-    height: 40vh;
+    height: 100vh;
     max-width: 100%;
 }
 
-.content {
+.wr_content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -12,42 +12,135 @@
     align-items: center;
 }
 
-.title {
+.wr_first {
+    width: 40%;
+    height: 100%;
+}
+
+.wr_first, .wr_image {
     display: flex;
     justify-content: center;
-    width: 50%;
-    height: 20vh;
-    transition: .2s;
-    user-select: none;
-    cursor: pointer;
-    overflow: hidden;
+    align-items: center;
 }
 
-.main h1 {
-    position: relative;
+.wr_image img {
+    width: 350px;
+    height: 500px;
+}
+
+.wr_image img:nth-child(1) {
     z-index: 1;
+    animation: float 10s linear infinite;
+    border-radius: 15px;
 }
 
-.main h1, .sub h1{
-    font-size: 5vw;
-    transition: .5s;
-    font-style: italic;
-}
-
-.sub{
+.wr_image img:nth-child(2) {
     position: absolute;
-    height: 100px;
+    filter: blur(20px);
+    transform: translate(10px, 10px);
 }
 
-.sub h1:nth-child(2) {transform: translateY(-100%);}
-.sub h1:nth-child(3) {transform: translateY(-200%);}
+.wr_second {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
 
-.title:hover .sub h1 {
-    text-shadow: 1px 0px 1px black, -1px 0px 1px black, 0px 1px 1px black, 0px -1px 1px black;
+.wr_title {overflow: hidden;}
+
+.wr_main, .wr_sub {font-size: 3vw;}
+
+.wr_main h1 {
+    background-clip: text;
+    color: transparent;
+    z-index: 2;
+    position: relative;
+    animation: bgmover 10s linear infinite;
+}
+
+#wr_t {
+    background:radial-gradient(circle at 50% 50%, rgba(87, 154, 210, 1) 0%, rgba(235, 163, 69, 1) 50%, rgba(38, 50, 79, 1) 100%);
+    background-clip: text;
+}
+#ig_t {
+    background:radial-gradient(circle at 50% 50%, rgba(205, 220, 57, 1) 0%, rgba(76, 175, 80, 1) 50%, rgba(121, 85, 72, 1) 100%);
+    background-clip: text;
+}
+#bp_t {
+    background:radial-gradient(circle at 50% 50%, rgba(117, 113, 113, 1) 0%, rgba(46, 9, 150, 1) 50%, rgba(129, 43, 143, 1) 100%);
+    background-clip: text;
+}
+#ur_t {
+    background:radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 1) 0%, rgba(255, 235, 59, 1) 100%);
+    background-clip: text;
+}
+
+.wr_sub h1 {
+    position: absolute;
     color: white;
-    opacity: 1;
+    text-shadow: 1px 0px 1px black, -1px 0px 1px black, 0px 1px 1px black, 0px -1px 1px black;
+    transform: translateY(-100%) skew(15deg);
+    opacity: 0;
+    transition: .4s;
 }
 
-.title:hover .sub h1:nth-child(1){transform: translateY(-50%);}
-.title:hover .sub h1:nth-child(2){transform: translateY(-200%);}
-.title:hover .sub h1:nth-child(3){transform: translateY(-350%);}
+.wr_title:hover .wr_sub h1:nth-child(1) {transform: translateY(-150%); opacity: 1;}
+.wr_title:hover .wr_sub h1:nth-child(2) {transform: translateY(-200%); opacity: 1;}
+.wr_title:hover .wr_sub h1:nth-child(3) {transform: translateY(-250%); opacity: 1;}
+
+.wr_description {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    transition: .2s;
+    animation: float 10s linear infinite;
+}
+
+.wr_description p:nth-child(1){
+    font-weight: 800;
+    font-size: 1.2vw;
+    margin: 10px;
+}
+
+.wr_attributes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wr_attributes article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 50%;
+}
+
+.wr_attributes article section {
+    margin: 20px;
+    box-shadow: 3px 3px 10px black;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.wr_attributes article section:hover {
+    background: black;
+    color: white;
+}
+
+@keyframes float {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-30px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes bgmover {
+    0% {background-position: 0px;}
+    50% {background-position: 1000px;}
+    100% {background-position: 0px;}
+}
