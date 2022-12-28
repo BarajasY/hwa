@@ -44,7 +44,7 @@
     display: grid;
     height: fit-content;
     grid-template-columns: auto auto auto auto auto;
-    gap: 50px;
+    gap: 20px;
 }
 
 .charImage {
@@ -53,8 +53,8 @@
 }
 
 #Image {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     box-shadow: 5px 5px 10px black;
     position: relative;
     z-index: 10;

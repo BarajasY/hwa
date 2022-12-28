@@ -59,6 +59,7 @@
     z-index: 2;
     position: relative;
     animation: bgmover 10s linear infinite;
+    text-align: center;
 }
 
 #wr_t {
@@ -82,14 +83,14 @@
     position: absolute;
     color: white;
     text-shadow: 1px 0px 1px black, -1px 0px 1px black, 0px 1px 1px black, 0px -1px 1px black;
-    transform: translateY(-100%) skew(15deg);
+    transform: translateY(-100%);
     opacity: 0;
     transition: .4s;
 }
 
 .wr_title:hover .wr_sub h1:nth-child(1) {transform: translateY(-150%); opacity: 1;}
-.wr_title:hover .wr_sub h1:nth-child(2) {transform: translateY(-200%); opacity: 1;}
-.wr_title:hover .wr_sub h1:nth-child(3) {transform: translateY(-250%); opacity: 1;}
+.wr_title:hover .wr_sub h1:nth-child(2) {transform: translateY(-50%); opacity: 1;}
+.wr_title:hover .wr_sub h1:nth-child(3) {transform: translateY(-250%); opacity: 0;}
 
 .wr_description {
     width: 90%;
@@ -143,4 +144,58 @@
     0% {background-position: 0px;}
     50% {background-position: 1000px;}
     100% {background-position: 0px;}
+}
+
+@media only screen and (max-width: 991px) {
+    .wr_container {
+        height: fit-content;
+    }
+
+    .wr_content {
+        flex-direction: column;
+    }
+
+    .wr_image img {
+        width: 200px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .wr_first {
+        width: 100%;
+        order: 1;
+    }
+
+    .wr_second {
+        width: 100%;
+        order: 2;
+    }
+
+    .wr_description {
+        margin: 30px;
+    }
+
+    .wr_description p:nth-child(1) {
+        font-size: 2.5vw;
+    }
+
+    .wr_title {
+        margin: 40px;
+    }
+
+    .wr_main h1 {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wr_description p:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .wr_main h1 {font-size: 11vw;}
+
+    .wr_attributes {flex-direction: column;}
+    .wr_attributes article {width: 100%;}
+    .wr_attributes article section {margin: 10px;}
 }
