@@ -11,8 +11,8 @@ const Movies_intro = () => {
   return (
     <div className="mi_container">
         <div className="mi_content">
-          <motion.h1 initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration:1}}>4 Movies, 1 Prequel, 5 legends</motion.h1>
-            <motion.section initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true}} transition={{duration:1}}>
+          <motion.h1 initial={{opacity:0, y: -50}} whileInView={{opacity:1, y:0}} transition={{duration:1}}>4 Movies, 1 Prequel, 5 legends</motion.h1>
+            <motion.section initial={{opacity:0, y: 50}} whileInView={{opacity:1, y:0}} transition={{duration:1}}>
                 <div className="movImage" id="World" onMouseEnter={() => setMovie("World Race")}></div>
                 <div className="movImage" id="Ignition" onMouseEnter={() => setMovie("Ignition")}></div>
                 <div className="movImage" id="Silence" onMouseEnter={() => setMovie("Speed of Silence")}></div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import './MoviesPage.css';
 import  WRace  from './WRace';
 import Ignition from './Ignition';
 import SOSilence from './SOSilence';

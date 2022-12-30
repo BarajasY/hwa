@@ -1,19 +1,19 @@
 import React from 'react';
-import './WRace.css';
 import worldr from '../../assets/world.webp';
+import { motion } from 'framer-motion';
 
 const WRace = () => {
   return (
     <div className="wr_container">
         <div className="wr_content">
             <div className="wr_first">
-                <div className="wr_image">
+                <motion.div className="wr_image" initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y:0}}>
                     <img src={worldr} alt="World Race" />
                     <img src={worldr} alt="World Race" />
-                </div>
+                </motion.div>
             </div>
             <div className="wr_second">
-                <div className="wr_title">
+                <motion.div className="wr_title" initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}}>
                     <div className="wr_main">
                         <h1 id="wr_t">World Race</h1>
                     </div>
@@ -22,29 +22,29 @@ const WRace = () => {
                         <h1>World Race</h1>
                         <h1>World Race</h1>
                     </div>
-                </div>
+                </motion.div>
                 <div className="wr_description">
-                    <p>The prequel to the main series, but, in it's own it provides an incredible story with amazing characters that would later serve as a strong foundation for the next 4 movies.</p>
+                    <motion.p initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y: 0}}>The prequel to the main series, but, in it's own it provides an incredible story with amazing characters that would later serve as a strong foundation for the next 4 movies.</motion.p>
                     <div className="wr_attributes">
                         <article>
-                            <section>
+                            <motion.section initial={{x: -20, opacity: 0}} whileInView={{x:0, opacity: 1}}>
                                 <h1>Title</h1>
                                 <p>World Race</p>
-                            </section>
-                            <section>
+                            </motion.section>
+                            <motion.section initial={{x: 20, opacity: 0}} whileInView={{x:0, opacity: 1}}>
                                 <h1>Order</h1>
                                 <p>Prequel</p>
-                            </section>
+                            </motion.section>
                         </article>
                         <article>
-                            <section>
+                            <motion.section initial={{x: 20, opacity: 0}} whileInView={{x:0, opacity: 1}}>
                                 <h1>Duration</h1>
                                 <p>1hr 50m</p>
-                            </section>
-                            <section>
+                            </motion.section>
+                            <motion.section initial={{x: -20, opacity: 0}} whileInView={{x:0, opacity: 1}}>
                                 <h1>Release Date</h1>
                                 <p>December 2, 2003</p>
-                            </section>
+                            </motion.section>
                         </article>
                     </div>
                 </div>

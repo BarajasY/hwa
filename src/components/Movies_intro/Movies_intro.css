@@ -55,7 +55,7 @@
 .movImage {
     width: 250px;
     height: 300px;
-    margin: 30px;
+    margin: 15px;
     position: relative;
     background-size: cover;
     display: flex;
@@ -143,6 +143,11 @@
 
     .buttonWrapper button {
         font-size: 3vw;
+    }
+
+    .movImage {
+        width: 140px;
+        height: 200px;
     }
 }
 

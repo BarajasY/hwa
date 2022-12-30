@@ -38,12 +38,12 @@ const CharactersPage = () => {
                 </div>
                 <motion.div className="cards_wrapper" initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .5}}>
                     {teku.map((d, i) => (
-                        <div className="card" id="tk_c" key={i} onClick={(i) => setTekuActive(teku.indexOf(d))}>
+                        <motion.div className="card" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay: i*.1}} id="tk_c" key={i} onClick={(i) => setTekuActive(teku.indexOf(d))}>
                             <img src={d.data.img} alt={d.data.name} />
                             <h1>{d.data.alias}</h1>
                             <h1>About</h1>
                             <p>{d.data.name}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </motion.div>
                 {TekuActive === 10 ? 
@@ -62,12 +62,12 @@ const CharactersPage = () => {
                 </div>
                 <motion.div className="cards_wrapper" initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .5}}>
                         {maniacs.map((b, i) => (
-                            <div className="card" id="mm_c" key={i} onClick={() => setManiacsActive(maniacs.indexOf(b))}>
+                            <motion.div className="card" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay: i*.1}} id="mm_c" key={i} onClick={() => setManiacsActive(maniacs.indexOf(b))}>
                                     <img src={b.data.img} alt={b.data.name} />
                                     <h1>{b.data.alias}</h1>
                                     <h1>About</h1>
                                     <p>{b.data.name}</p>
-                                </div>
+                            </motion.div>
                             ))}
                             </motion.div>
                     {ManiacsActive === 10 ? 
@@ -86,12 +86,12 @@ const CharactersPage = () => {
                 </div>
                 <motion.div className="cards_wrapper" initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .5}}>
                     {drones.map((c, i) => (
-                        <div className="card" id="rd_c" key={i} onClick={() => setDronesActive(drones.indexOf(c))}>
+                        <motion.div className="card" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay: i*.1}} id="rd_c" key={i} onClick={() => setDronesActive(drones.indexOf(c))}>
                             <img src={c.data.img} alt={c.data.name} />
                             <h1>{c.data.alias}</h1>
                             <h1>About</h1>
                             <p>{c.data.name}</p>
-                        </div>
+                        </motion.div>
                     ))}
                     </motion.div>
                     {DronesActive === 10 ? 
@@ -110,12 +110,12 @@ const CharactersPage = () => {
                 </div>
                 <motion.div className="cards_wrapper" initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: .5}}>
                     {notable.map((a, i) => (
-                        <div className="card" id="no_c" key={i} onClick={() => setNotableActive(notable.indexOf(a))}>
+                        <motion.div className="card" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay: i*.1}} id="no_c" key={i} onClick={() => setNotableActive(notable.indexOf(a))}>
                             <img src={a.data.img} alt={a.data.name} />
                             <h1>{a.data.alias}</h1>
                             <h1>About</h1>
                             <p>{a.data.name}</p>
-                        </div>
+                        </motion.div>
                     ))}
                     </motion.div>
                     {NotableActive === 10 ? 
