@@ -10,7 +10,7 @@ const Navbar = () => {
             <section>
                 <Link to="/"><h1>Acceleracers</h1></Link>
             </section>
-            <section>
+            <section className="links_wrapper">
                 <Link to="/movies">Movies</Link>
                 <Link to="/Characters">Characters</Link>
                 <Link to="/realms">Realms</Link>

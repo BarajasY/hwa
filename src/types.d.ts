@@ -13,3 +13,7 @@ export interface DataInterface {
     data: DocumentData,
     id:string
 }
+
+export interface RealmsUrl {
+    url: string
+}

@@ -5,3 +5,4 @@ export { default as CharactersIntro } from './CharactersIntro/CharactersIntro';
 export { default as RealmsIntro} from './RealmsIntro/RealmsIntro';
 export { default as CharactersPage } from './CharactersPage/CharactersPage';
 export { default as MoviesPage } from './MoviesPage/MoviesPage';
+export { default as RealmsPage } from './RealmsPage/RealmsPage';

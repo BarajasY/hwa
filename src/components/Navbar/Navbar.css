@@ -21,22 +21,26 @@
 .nav_content section:nth-child(1) a h1{
     user-select: none;
     color: var(--black);
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 800;
 }
 
-.nav_content section a {
-    text-decoration: none;
-    font-family: 'Inter';
+.nav_content section a {text-decoration: none;}
+
+.links_wrapper {display: flex;}
+
+.links_wrapper a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    font-weight: 800;
+    transition: .2s;
 }
 
-.nav_content section:nth-child(2) a {
-    margin: 20px;
-    color: transparent;
-    font-size: 1.1vw;
-    font-weight: 800;
-    color: var(--black);
-}
+.links_wrapper a:hover {opacity: .5;}
 
 @media only screen and (max-width:991px) {
     .nav_content section:nth-child(1) a h1{
