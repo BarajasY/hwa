@@ -18,7 +18,7 @@ const BPoint = () => {
                     </div>
                 </motion.div>
                 <div className="wr_description">
-                    <motion.p initial={{opacity :0, y: 50}} whileInView={{opacity: 1, y: 0}}>The first movie of the series. Introduces us to the new changed world that World Race left, seeing new characters aswell as old ones. This movie also shows the main focus the series will have, which is the racing drones threat and the racing realms.</motion.p>
+                    <motion.p initial={{opacity :0, y: 50}} whileInView={{opacity: 1, y: 0}}>The third instance of the series where many events and mysteries are discovered, making this movie one of the best of the series being filled with emotions.</motion.p>
                     <div className="wr_attributes">
                         <article>
                             <motion.section initial={{x: -20, opacity: 0}} whileInView={{x:0, opacity: 1}}>

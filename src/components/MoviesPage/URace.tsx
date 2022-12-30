@@ -24,7 +24,7 @@ const URace = () => {
                     </div>
                 </motion.div>
                 <div className="wr_description">
-                    <motion.p initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y: 0}}>The prequel to the main series, but, in it's own it provides an incredible story with amazing characters that would later serve as a strong foundation for the next 4 movies.</motion.p>
+                    <motion.p initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y: 0}}>Last movie in the series having an open ending, the best movie of the series in my opinion.</motion.p>
                     <div className="wr_attributes">
                         <article>
                             <motion.section initial={{x: 20, opacity: 0}} whileInView={{x:0, opacity: 1}}>
