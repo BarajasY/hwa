@@ -20,7 +20,7 @@
 }
 
 .hero_content section:nth-child(1) h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Inter';
     background:linear-gradient(134deg, rgba(55, 100, 237, 1) 8%, rgba(127, 31, 32, 1) 25%, rgba(159, 66, 193, 1) 75%, rgba(68, 147, 27, 1) 100%);
     -webkit-background-clip: text;
@@ -28,7 +28,7 @@
     color: transparent;
     font-weight: 800;
     animation: gradbg 5s linear infinite;
-    width: 600px;
+    width: 100%;
     text-align: center;
 }
 
@@ -110,8 +110,8 @@
     }
 
     .hero_content section:nth-child(1) h1 {
-        font-size: 6vw;
-        width: 90%;
+        font-size: 8vw;
+        width: 100%;
     }
 
     .hero_content section:nth-child(2) button {

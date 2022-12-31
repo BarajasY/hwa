@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero_container">
         <div className="hero_content">
             <section>
-                <motion.h1 initial={{y: 50, opacity: 0}} whileInView={{opacity: 1, y:0}} transition={{duration: .5}}><span>A brief</span><span> introduction</span><span> to the classic</span><span> series</span></motion.h1>
+                <motion.h1 initial={{y: 50, opacity: 0}} whileInView={{opacity: 1, y:0}} transition={{duration: .5}}>Hot Wheels<br/>Acceleracers</motion.h1>
             </section>
             <section>
                 <motion.button initial={{y: -50, opacity: 0}} whileInView={{opacity: 1, y:0}} transition={{duration: 1}}><Link to="/movies">Discover</Link></motion.button>
