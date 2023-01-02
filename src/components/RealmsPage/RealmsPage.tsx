@@ -29,15 +29,27 @@ const RealmsPage = () => {
 
   return (
     <div className="rp_container">
+      <div className="rp_explanation">
+        <section>
+          <motion.p initial={{x:-50, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration: .3}}>Front</motion.p>
+          <motion.h1 initial={{x:50, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration: .3}}>Realm Card</motion.h1>
+        </section>
+        <section>
+          <motion.p initial={{x:50, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration: .3}}>Back</motion.p>
+          <motion.h1 initial={{x:-50, opacity: 0}} whileInView={{x:0, opacity:1}} transition={{duration: .3}}>Realm Accelecharger</motion.h1>
+        </section>
+      </div>
       <div className="rp_content">
         <motion.div className="title_container" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay: .5}}>
           <h1>Card Game</h1>
         </motion.div>
         <section>
          {CardRealms.map((a, i) => (
-           <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.1}} viewport={{once:true}}>
+           <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.05}} viewport={{once:true}}>
             <img src={a.data.img} alt={a.data.name} />
+            <img src={a.data.img_acc} alt={a.data.name} id="accelecharger" />
             <img src={a.data.img} alt={a.data.name} id="blurRealm"/>
+            <img src={a.data.img_acc} alt={a.data.name} id="accBlurr" />
             <h1>{a.data.name}</h1>
           </motion.div>
          ))}
@@ -51,7 +63,9 @@ const RealmsPage = () => {
          {IgnitionRealms.map((a,i) => (
            <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.1}} viewport={{once:true}}>
             <img src={a.data.img} alt={a.data.name} />
+            <img src={a.data.img_acc} alt={a.data.name} id="accelecharger" />
             <img src={a.data.img} alt={a.data.name} id="blurRealm"/>
+            <img src={a.data.img_acc} alt={a.data.name} id="accBlurr" />
             <h1>{a.data.name}</h1>
           </motion.div>
          ))}
@@ -65,7 +79,9 @@ const RealmsPage = () => {
          {SilenceRealms.map((a, i) => (
            <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.1}} viewport={{once:true}}>
             <img src={a.data.img} alt={a.data.name} />
+            <img src={a.data.img_acc} alt={a.data.name} id="accelecharger" />
             <img src={a.data.img} alt={a.data.name} id="blurRealm"/>
+            <img src={a.data.img_acc} alt={a.data.name} id="accBlurr" />
             <h1>{a.data.name}</h1>
           </motion.div>
          ))}
@@ -79,7 +95,9 @@ const RealmsPage = () => {
          {BPointRealms.map((a,i) => (
            <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.1}} viewport={{once:true}}>
             <img src={a.data.img} alt={a.data.name} />
+            <img src={a.data.img_acc} alt={a.data.name} id="accelecharger" />
             <img src={a.data.img} alt={a.data.name} id="blurRealm"/>
+            <img src={a.data.img_acc} alt={a.data.name} id="accBlurr" />
             <h1>{a.data.name}</h1>
           </motion.div>
          ))}
@@ -93,7 +111,9 @@ const RealmsPage = () => {
          {URaceRealms.map((a,i) => (
            <motion.div className="realms_wrapper" initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0}} transition={{delay:i*.1}} viewport={{once:true}}>
             <img src={a.data.img} alt={a.data.name} />
+            <img src={a.data.img_acc} alt={a.data.name} id="accelecharger" />
             <img src={a.data.img} alt={a.data.name} id="blurRealm"/>
+            <img src={a.data.img_acc} alt={a.data.name} id="accBlurr" />
             <h1>{a.data.name}</h1>
           </motion.div>
          ))}
